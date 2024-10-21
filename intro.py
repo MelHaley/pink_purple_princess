@@ -15,7 +15,7 @@ with col[0]:
 
 with col[1]:
     st.container(height=80, border=False)
-    st.image('LegoImages/Images/unicorn.png')
+    st.image('LegoData/Images/unicorn_large.png')
 
 with col[0]:
     st.container(height=20, border=False)
@@ -46,4 +46,4 @@ with col[0]:
     st.write('Use the links in the sidebar to explore the analysis results and conclusions.')
 
 with st.sidebar:
-    st.image('LegoImages/Images/color_lego.png')
+    st.image('LegoData/Images/color_lego.png')

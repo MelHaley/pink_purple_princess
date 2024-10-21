@@ -6,7 +6,7 @@ st.set_page_config(page_title="Princesses, etc.", layout='wide')
 
 ########################################################################
 with st.sidebar:
-    st.image('LegoImages/Images/color_lego.png')
+    st.image('LegoData/Images/color_lego.png')
 
 st.title("LEGO Analysis: Princesses, Unicorns, Fairies, Mermaids, and Kitties")
 
@@ -22,31 +22,31 @@ with st.container(height=None, border=False):
     if switch == "all colors":
         col = st.columns((1, 1, 1, 1, 1), gap='medium')
         with col[0]:
-            st.image('./LegoImages/category/princess.png')
+            st.image('./LegoData/Images/princess.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/all_stats', 
                                                   data_name='princess', 
                                                   border='black'),
                             use_container_width=True)
         with col[1]:
-            st.image('./LegoImages/category/unicorn.png')
+            st.image('./LegoData/Images/unicorn.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/all_stats', 
                                                   data_name='unicorn', 
                                                   border='black'),
                             use_container_width=True)
         with col[2]:
-            st.image('./LegoImages/category/fairy.png')
+            st.image('./LegoData/Images/fairy.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/all_stats', 
                                                   data_name='fairy', 
                                                   border='black'),
                             use_container_width=True)
         with col[3]:
-            st.image('./LegoImages/category/mermaid.png')
+            st.image('./LegoData/Images/mermaid.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/all_stats', 
                                                   data_name='mermaid', 
                                                   border='black'),
                             use_container_width=True)
         with col[4]:
-            st.image('./LegoImages/category/kitty.png')
+            st.image('./LegoData/Images/kitty.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/all_stats', 
                                                   data_name='kitty', 
                                                   border='black'),
@@ -55,31 +55,31 @@ with st.container(height=None, border=False):
     if switch == "pink and purple":
         col = st.columns((1, 1, 1, 1, 1), gap='medium')
         with col[0]:
-            st.image('./LegoImages/category/princess.png')
+            st.image('./LegoData/Images/princess.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/pink_stats', 
                                                   data_name='princess', 
                                                   border='orchid'),
                             use_container_width=True)
         with col[1]:
-            st.image('./LegoImages/category/unicorn.png')
+            st.image('./LegoData/Images/unicorn.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/pink_stats', 
                                                   data_name='unicorn', 
                                                   border='orchid'),
                             use_container_width=True)
         with col[2]:
-            st.image('./LegoImages/category/fairy.png')
+            st.image('./LegoData/Images/fairy.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/pink_stats', 
                                                   data_name='fairy', 
                                                   border='orchid'),
                             use_container_width=True)
         with col[3]:
-            st.image('./LegoImages/category/mermaid.png')
+            st.image('./LegoData/Imagesmermaid.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/pink_stats', 
                                                   data_name='mermaid', 
                                                   border='orchid'),
                             use_container_width=True)
         with col[4]:
-            st.image('./LegoImages/category/kitty.png')
+            st.image('./LegoData/Images/kitty.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/pink_stats', 
                                                   data_name='kitty', 
                                                   border='orchid'),
@@ -130,37 +130,37 @@ with themes_tab:
             with all_tab2:
                 st.altair_chart(gl.plot_set_colors('./LegoData/Category/all_set_colors',
                                                    setname='The Enchanted Treehouse',
-                                                   image_file='./LegoData/set_images'),
+                                                   image_file='./LegoData/Images/set_images'),
                                 use_container_width=True)
             with princess_tab2:
                 st.altair_chart(gl.plot_set_colors('./LegoData/Category/cat_set_colors',
                                                    setname='The Enchanted Treehouse',
                                                    category='princess',
-                                                   image_file='./LegoData/set_images'),
+                                                   image_file='./LegoData/Images/set_images'),
                                 use_container_width=True)
             with unicorn_tab2:
                 st.altair_chart(gl.plot_set_colors('./LegoData/Category/cat_set_colors',
                                                    setname='Unicorn Creative Family Pack',
                                                    category='unicorn',
-                                                   image_file='./LegoData/set_images'),
+                                                   image_file='./LegoData/Images/set_images'),
                                 use_container_width=True)
             with fairy_tab2:
                 st.altair_chart(gl.plot_set_colors('./LegoData/Category/cat_set_colors',
                                                    setname="Sleeping Beauty's Fairytale Castle",
                                                    category='fairy',
-                                                   image_file='./LegoData/set_images'),
+                                                   image_file='./LegoData/Images/set_images'),
                                 use_container_width=True)
             with mermaid_tab2:
                 st.altair_chart(gl.plot_set_colors('./LegoData/Category/cat_set_colors',
                                                    setname='The Little Mermaid Royal Clamshell',
                                                    category='mermaid',
-                                                   image_file='./LegoData/set_images'),
+                                                   image_file='./LegoData/Images/set_images'),
                                 use_container_width=True)
             with kitty_tab2:
                 st.altair_chart(gl.plot_set_colors('./LegoData/Category/cat_set_colors',
                                                    setname='Unikingdom Fairground Fun',
                                                    category='kitty',
-                                                   image_file='./LegoData/set_images'),
+                                                   image_file='./LegoData/Images/set_images'),
                                 use_container_width=True)
 
     with st.container(height=None, border=False):
@@ -172,36 +172,36 @@ with themes_tab:
             with all_tab3:
                 st.altair_chart(gl.plot_sets_most_pieces(data_path='./LegoData/Category/all_pink_pieces',
                                                          setname="The Enchanted Treehouse",
-                                                         image_file='./LegoData/set_images'),
+                                                         image_file='./LegoData/Images/set_images'),
                                 use_container_width=True)
             with princess_tab3:
                 st.altair_chart(gl.plot_sets_most_pieces(data_path='./LegoData/Category/cat_pink_pieces',
                                                          setname='The Enchanted Treehouse',
-                                                         image_file='./LegoData/set_images',
+                                                         image_file='./LegoData/Images/set_images',
                                                          category='princess'),
                                 use_container_width=True)
             with unicorn_tab3:
                 st.altair_chart(gl.plot_sets_most_pieces(data_path='./LegoData/Category/cat_pink_pieces',
                                                          setname='Unicorn Creative Family Pack',
-                                                         image_file='./LegoData/set_images',
+                                                         image_file='./LegoData/Images/set_images',
                                                          category='unicorn'),
                                 use_container_width=True)
             with fairy_tab3:
                 st.altair_chart(gl.plot_sets_most_pieces(data_path='./LegoData/Category/cat_pink_pieces',
                                                          setname="Sleeping Beauty's Fairytale Castle",
-                                                         image_file='./LegoData/set_images',
+                                                         image_file='./LegoData/Images/set_images',
                                                          category='fairy'),
                                 use_container_width=True)
             with mermaid_tab3:
                 st.altair_chart(gl.plot_sets_most_pieces(data_path='./LegoData/Category/cat_pink_pieces',
                                                          setname='The Mermaid Castle',
-                                                         image_file='./LegoData/set_images',
+                                                         image_file='./LegoData/Images/set_images',
                                                          category='mermaid'),
                                 use_container_width=True)
             with kitty_tab3:
                 st.altair_chart(gl.plot_sets_most_pieces(data_path='./LegoData/Category/cat_pink_pieces',
                                                          setname='Unikingdom Fairground Fun',
-                                                         image_file='./LegoData/set_images',
+                                                         image_file='./LegoData/Images/set_images',
                                                          category='kitty'),
                                 use_container_width=True)
                 

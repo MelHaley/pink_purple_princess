@@ -21,7 +21,7 @@ with col[0]:
 # Colors and Metrics
 
 with st.sidebar:
-    st.image('LegoImages/Images/color_lego.png')
+    st.image('LegoData/Images/color_lego.png')
     col = st.columns((1, 1), gap='small')
     with col[0]:
         st.metric(label="PINK Colors", value=pink_df['color_name'].nunique(), delta="")
@@ -70,7 +70,7 @@ with themes_tab:
             st.subheader("Which sets have the most pink and purple colors?")
             st.altair_chart(gl.plot_set_colors(data_path='./LegoData/Colors/set_colors',
                                                setname='Diagon Alley',
-                                               image_file='./LegoData/set_images',
+                                               image_file='./LegoData/Images/set_images',
                                                h=300,),
                             use_container_width=True)
 
@@ -81,7 +81,7 @@ with themes_tab:
             st.subheader("Which sets have the most pink and purple pieces?")
             st.altair_chart(gl.plot_sets_most_pieces(data_path='./LegoData/Colors/set_pieces',
                                                      setname="Andy Warhol's Marilyn Monroe",
-                                                     image_file='./LegoData/set_images',
+                                                     image_file='./LegoData/Images/set_images',
                                                      h=300),
                             use_container_width=True)
 

@@ -7,7 +7,7 @@ import graph_legos as gl
 st.set_page_config(page_title="Recommendations", layout='wide')
 
 with st.sidebar:
-    st.image('LegoImages/Images/color_lego.png')
+    st.image('LegoData/Images/color_lego.png')
 
 st.title("LEGO Analysis: Recommendations")
 

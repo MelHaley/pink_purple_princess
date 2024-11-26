@@ -73,7 +73,7 @@ with st.container(height=None, border=False):
                                                   border='orchid'),
                             use_container_width=True)
         with col[3]:
-            st.image('./LegoData/Imagesmermaid.png')
+            st.image('./LegoData/Images/mermaid.png')
             st.altair_chart(gl.plot_category_info(data_path='./LegoData/Category/pink_stats', 
                                                   data_name='mermaid', 
                                                   border='orchid'),
